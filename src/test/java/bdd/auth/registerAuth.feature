@@ -16,7 +16,7 @@ Feature: Registrar usuario en el sistema
     Then status 200
     And match response.data.id != null
     And match response.access_token != null
-
+    * def delay = java.lang.Thread.sleep(2000)
 
 
 
